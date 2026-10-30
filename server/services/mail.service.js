@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 // --- Configuración -----------------------------------------------------------
 // Funciona con cualquier proveedor SMTP transaccional (Resend, Brevo, SES...).
 // Solo cambian las variables de entorno; el código es el mismo.
-const APP_NAME = process.env.APP_NAME ?? 'PerfumShops';
+const APP_NAME = process.env.APP_NAME ?? 'StorePerfumes';
 
 let transporter;
 
@@ -91,11 +91,11 @@ export const sendVerificationEmail = async ({ to, nombre, token }) => {
   }
 
   // En producción el remitente DEBE ser una dirección de tu dominio verificado
-  // (p. ej. "PerfumShops <no-reply@dominio.com>"). Con Resend/Brevo, SMTP_USER
+  // (p. ej. "StorePerfumes <no-reply@dominio.com>"). Con Resend/Brevo, SMTP_USER
   // no es una dirección de correo, así que no sirve como respaldo.
   const from = process.env.MAIL_FROM;
   if (!from) {
-    throw new Error('Falta MAIL_FROM (p. ej. "PerfumShops <no-reply@dominio.com>")');
+    throw new Error('Falta MAIL_FROM (p. ej. "StorePerfumes <no-reply@dominio.com>")');
   }
 
   await getTransporter().sendMail({
@@ -111,7 +111,7 @@ export const sendVerificationEmail = async ({ to, nombre, token }) => {
     html: plantillaVerificacion({
       nombre,
       url,
-      logoUrl: `${frontendUrl}/img/logo-perfumshops.png`,
+      logoUrl: `${frontendUrl}/img/logo-storeperfumes.png`,
     }),
   });
 };
@@ -129,7 +129,7 @@ export const sendAccountExistsEmail = async ({ to, nombre }) => {
   }
 
   const from = process.env.MAIL_FROM;
-  if (!from) throw new Error('Falta MAIL_FROM (p. ej. "PerfumShops <no-reply@dominio.com>")');
+  if (!from) throw new Error('Falta MAIL_FROM (p. ej. "StorePerfumes <no-reply@dominio.com>")');
 
   await getTransporter().sendMail({
     from,

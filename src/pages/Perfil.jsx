@@ -18,7 +18,7 @@ export default function Perfil() {
         <div className="login-fields">
           <div className="login-form">
             <h1 className="login-title">Mi perfil</h1>
-            <p className="login-sub">Los datos de tu cuenta en PerfumShops</p>
+            <p className="login-sub">Los datos de tu cuenta en StorePerfumes</p>
 
             <dl className="perfil-datos">
               <div>

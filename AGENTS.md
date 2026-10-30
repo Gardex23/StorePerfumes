@@ -2,7 +2,7 @@
 
 ## Project
 
-PerfumShops — single-package React 19 + Vite 8 SPA (perfume e-commerce mock). Plain JS/JSX, no TypeScript, **no tests**, no backend. All UI copy and validation messages are **Spanish**.
+StorePerfumes — single-package React 19 + Vite 8 SPA (perfume e-commerce mock). Plain JS/JSX, no TypeScript, **no tests**, no backend. All UI copy and validation messages are **Spanish**.
 
 ## Commands
 
@@ -14,7 +14,7 @@ npm run build    # vite build → dist/ (also a good smoke check)
 
 Order: `lint` → `build`. There is no typecheck or test command — do not invent one.
 
-The repo path contains spaces and an accented character (`pagina_perfumshops`); always quote paths in shell commands.
+The repo path contains spaces and an accented character (`pagina_storeperfumes`); always quote paths in shell commands.
 
 ## Structure
 

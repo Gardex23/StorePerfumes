@@ -32,7 +32,7 @@ function agruparPorEsencia(items) {
 // Función para esencias detalladas, no para perfumes fabricados
 /* function construirMensaje(grupos, totales, usuario) {
   const cliente = [usuario?.nombre, usuario?.apellido].filter(Boolean).join(" ");
-  const lineas = ["Hola PerfumShops, quiero hacer este pedido:", ""];
+  const lineas = ["Hola StorePerfumes, quiero hacer este pedido:", ""];
   for (const g of grupos) {
     lineas.push(`*${g.nombre}*`);
     for (const l of g.lineas) {
@@ -133,7 +133,7 @@ function Interno({ clave, children }) {
 // Un carrito por usuario: al cambiar de sesión se remonta y carga el suyo.
 export function CarritoProvider({ children }) {
   const { usuario } = useAuth();
-  const clave = `perfumshops_carrito_${usuario?.id ?? usuario?.email ?? "invitado"}`;
+  const clave = `storeperfumes_carrito_${usuario?.id ?? usuario?.email ?? "invitado"}`;
   return (
     <Interno key={clave} clave={clave}>
       {children}

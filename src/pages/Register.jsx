@@ -149,13 +149,13 @@ export default function Register() {
 
       <div className={`login-card ${ready ? "is-ready" : ""}`}>
         <Link to="/" className="login-logo" aria-label="Ir al inicio">
-          <img src="/img/logo-perfumshops.png" alt="PerfumShops" />
+          <img src="/img/logo-storeperfumes.png" alt="StorePerfumes" />
         </Link>
 
         <div className="login-fields">
           <form onSubmit={handleSubmit} noValidate className="login-form">
             <h1 className="login-title">Bienvenido</h1>
-            <p className="login-sub">Únete a PerfumShops y descubre tu esencia ideal</p>
+            <p className="login-sub">Únete a StorePerfumes y descubre tu esencia ideal</p>
             <div className="form-group">
               <input type="text" id="nombre" name="nombre" placeholder=" "
                      autoComplete="given-name" className="form-input"

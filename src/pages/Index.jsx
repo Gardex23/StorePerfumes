@@ -109,19 +109,19 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__brand">
-        <img src="/img/logo-perfumshops.png" alt="PerfumShops" />
+        <img src="/img/logo-storeperfumes.png" alt="StorePerfumes" />
         <p>Mi perfume, es mensaje.</p>
       </div>
       <div>
         <h4>Contacto</h4>
-        <p>contacto@perfumshops.com</p>
+        <p>contacto@storeperfumes.com</p>
         <p>+58 000 000 0000</p>
       </div>
       <div>
         <h4>Síguenos</h4>
         <p><Link to="#">Instagram</Link> · <Link to="#">TikTok</Link> · <Link to="#">WhatsApp</Link></p>
       </div>
-      <small>© {new Date().getFullYear()} PerfumShops. Todos los derechos reservados.</small>
+      <small>© {new Date().getFullYear()} StorePerfumes. Todos los derechos reservados.</small>
     </footer>
   );
 }

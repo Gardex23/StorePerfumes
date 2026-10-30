@@ -10,7 +10,7 @@ export function subirImagen(buffer) {
   return new Promise((resolve, reject) => {
     const stream = cloudinary.uploader.upload_stream(
       {
-        folder: 'perfumshops/perfumes',
+        folder: 'storeperfumes/perfumes',
         resource_type: 'image',
         transformation: [{ width: 800, crop: 'limit' }, { quality: 'auto', fetch_format: 'auto' }],
       },

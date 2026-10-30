@@ -75,7 +75,7 @@ export default function Login() {
 
       <div className={`login-card ${ready ? "is-ready" : ""}`}>
         <Link to="/" className="login-logo" aria-label="Ir al inicio">
-          <img src="/img/logo-perfumshops.png" alt="PerfumShops" />
+          <img src="/img/logo-storeperfumes.png" alt="StorePerfumes" />
         </Link>
 
         <div className="login-fields">
