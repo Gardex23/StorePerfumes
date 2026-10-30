@@ -149,7 +149,7 @@ export default function Register() {
 
       <div className={`login-card ${ready ? "is-ready" : ""}`}>
         <Link to="/" className="login-logo" aria-label="Ir al inicio">
-          <img src="/img/logo-storeperfumes.png" alt="StorePerfumes" />
+          <img src="/img/logo.png" alt="StorePerfumes" />
         </Link>
 
         <div className="login-fields">

@@ -111,7 +111,7 @@ export const sendVerificationEmail = async ({ to, nombre, token }) => {
     html: plantillaVerificacion({
       nombre,
       url,
-      logoUrl: `${frontendUrl}/img/logo-storeperfumes.png`,
+      logoUrl: `${frontendUrl}/img/logo.png`,
     }),
   });
 };

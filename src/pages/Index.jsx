@@ -109,7 +109,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__brand">
-        <img src="/img/logo-storeperfumes.png" alt="StorePerfumes" />
+        <img src="/img/logo.png" alt="StorePerfumes" />
         <p>Mi perfume, es mensaje.</p>
       </div>
       <div>
